@@ -71,19 +71,21 @@ em {
 }
 
 .home-content h1 {
-  font-size: 56px;
+  font-size: clamp(3rem, 1vw, 10rem);
   font-weight: 300;
   line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .home-content h3 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1vw, 10rem);
   font-weight: 700;
   color: #00583a;
+  margin-bottom: 1rem;
 }
 
 .home-content p {
-  font-size: 16px;
+  font-size: clamp(0.8rem, 1vw, 5rem);
   margin: 20px 0 40px;
 }
 
@@ -92,6 +94,7 @@ em {
   justify-content: space-between;
   width: 345px;
   height: 50px;
+  gap: 1rem;
 }
 
 /* Anlita mig/Fråga mig knapp box */
@@ -105,7 +108,7 @@ em {
   background: #00583a;
   border: 2px solid #00583a;
   border-radius: 8px;
-  font-size: 19px;
+  font-size: clamp(14px, 2vw, 16px);
   color: #081b29;
   text-decoration: none;
   font-weight: 600;
