@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&family=Roboto:wght@100&display=swap");
 
 * {
-  /* alla element på sidan */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 body {
   background: #081b29;
   color: #ededed;
 }
+
 /* header start */
 .header {
   position: fixed;
@@ -47,7 +47,7 @@ em {
   margin-left: 35px;
   transition: 0.3s;
 }
-/* navigation reagent */
+
 .navbar a:hover,
 .navbar a.active {
   color: #00583a;
@@ -59,11 +59,9 @@ em {
 
 .home {
   height: 100vh;
-  /* background: url("") no-repeat; */
-  background-size: cover;
-  background-position: center;
   display: flex;
-  align-items: center;
+  justify-content: center; /* Centrera horisontellt */
+  align-items: center; /* Centrera vertikalt */
   padding: 0 10%;
   border: 3px solid #0d334c57;
 }
@@ -95,6 +93,7 @@ em {
   width: 345px;
   height: 50px;
 }
+
 /* Anlita mig/Fråga mig knapp box */
 .btn-box a {
   position: relative;
@@ -115,6 +114,7 @@ em {
   overflow: hidden;
   transition: 0.5s;
 }
+
 /* Anlita mig: ändra text färg*/
 .btn-box a:hover {
   color: #00583a;
@@ -154,17 +154,17 @@ em {
   background-color: #00583a;
 }
 
-
-
-
-
 /* sociala medier knappar box */
 .home-sci {
   position: absolute;
   bottom: 40px;
-  width: 170px;
+  left: 20px; /* Justera för att placera dem till vänster */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Justera innehållet till vänster */
+}
+
+.home-sci a {
+  margin-right: 10px; /* Lägg till mellanrum mellan ikonerna */
 }
 
 /* sociala medier knappar content */
@@ -198,10 +198,6 @@ em {
   left: 0;
   width: 0;
   height: 100%;
-  background: transparent;
-  font-size: 20px;
-  color: #00583a;
-  text-decoration: none;
   background: #00583aed;
   z-index: -1;
   transition: 0.5s;
